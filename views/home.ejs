@@ -1,0 +1,29 @@
+<head>
+  <link rel="stylesheet" href="/app.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="flex-container">
+    <div class="container">
+      <h1>Join Us</h1>
+      <p class="lead">
+        Enter your email to join <strong><%= count %></strong> others on our
+        waitlist. We are 100% not a cult.
+      </p>
+
+      <form method="POST" action="/register">
+        <input
+          type="text"
+          name="email"
+          class="form"
+          placeholder="Enter Your Email"
+        />
+        <button>Join Now</button>
+      </form>
+    </div>
+  </div>
+</body>
